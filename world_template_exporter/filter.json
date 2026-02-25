@@ -1,0 +1,10 @@
+{
+    "description": "Exports world template",
+    "filters": [
+        {
+            "name": "world_template_exporter",
+            "runWith": "python",
+            "script": "main.py"
+        }
+    ]
+}

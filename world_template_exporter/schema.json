@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "world_template_exporter",
+  "type": "object",
+  "properties": {
+    "target_path": {
+      "type": "string",
+      "description": "The absolute path to the Minecraft world_template folder."
+    },
+    "copy_packs": {
+      "type": "boolean",
+      "description": "Should the filter copy packs to the world template folder?"
+    },
+    "world_template_path": {
+      "type": "string",
+      "description": "The path to the world template folder inside the 'data' directory."
+    }
+  },
+  "required": [
+    "target_path",
+    "copy_packs",
+    "world_template_path"
+  ]
+}
