@@ -6,7 +6,7 @@ import shutil
 def main():
     # 1. Parse settings (Regolith passes these as a JSON string in argv[1])
     try:
-        settings = json.loads(sys.argv[1]) if len(sys.argv) > 1 else {}
+        settings = json.loads(sys.argv[2]) if len(sys.argv) > 2 else {}
     except (json.JSONDecodeError, IndexError):
         settings = {}
 
